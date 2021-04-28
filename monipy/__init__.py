@@ -1,4 +1,5 @@
-# set version dunder variable
-from importlib import metadata
+from .__version__ import __version__
+from .main import main
 
-__version__ = metadata.version('monipy')
+
+__all__ = ["__version__", "main"]

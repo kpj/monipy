@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>monipy v{{ version }}</title>
+</head>
+<body>
+  {% for host in figure_map %}
+    <h1>Host: {{ host }}</h1>
+    {% for plugin in figure_map[host] %}
+      <h2>{{ plugin }}</h2>
+      <img src="data:;base64,{{ figure_map[host][plugin]["daily"] }}"/>
+      <img src="data:;base64,{{ figure_map[host][plugin]["monthly"] }}"/>
+    {% endfor %}
+  {% endfor %}
+</body>
+</html>
