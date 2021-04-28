@@ -7,6 +7,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Install dependencies
+        run: |
+          sudo apt-get install -y rrdtool
+
       - name: Checkout repository
         uses: actions/checkout@v2
 
@@ -34,6 +38,10 @@ jobs:
     needs: test
 
     steps:
+      - name: Install dependencies
+        run: |
+          sudo apt-get install -y rrdtool
+
       - name: Checkout repository
         uses: actions/checkout@v2
 
