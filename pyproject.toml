@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "monipy"
-version = "0.1.0"
+version = "0.1.1"
 description = "Web-dashboard for resource monitoring data."
 license = "MIT"
 authors = ["kpj <kim.philipp.jablonski@gmail.com>"]
