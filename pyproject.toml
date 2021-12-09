@@ -16,7 +16,7 @@ loguru = "^0.5.3"
 uvicorn = ">=0.13.4,<0.17.0"
 fastapi = ">=0.63,<0.71"
 Jinja2 = ">=2.11.3,<4.0.0"
-natsort = "^7.1.1"
+natsort = ">=7.1.1,<9.0.0"
 
 [tool.poetry.dev-dependencies]
 bump2version = "^1.0.1"
